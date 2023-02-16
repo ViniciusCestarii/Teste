@@ -1,0 +1,127 @@
+<html>
+    <head>
+	<meta charset="utf-8">
+	<title>Cadastro</title>
+        <style type="text/css">
+            form{
+                color: white;
+            }
+            legend{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table{
+                font-size: 30px
+            }
+            fieldset{
+
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                border: 10px groove;
+                border-color: skyblue;
+                color: black;
+                background-color: whitesmoke;
+                margin-bottom: 10px;
+                max-width: 600px 
+            }
+            legend{
+                border-top: 3px solid;
+                border-top-color: skyblue;
+                border-right: 3px solid;
+                border-right-color: skyblue;
+                border-left:3px solid;
+                border-left-color: skyblue;
+                background-color: whitesmoke;
+                border-bottom: 3px solid;
+                border-bottom-color: skyblue;
+                border-radius: 40px;
+            }
+	    </style>
+    </head>
+
+    <body>
+	    <form action="" method="get">
+		    <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>Nome Completo: </label>
+                <input type="text" name="nomecompleto" placeholder="Digite aqui" required="">
+                <br>
+                <br>
+                <label>Sexo:</label>
+                <label>M</label>
+                <input type="radio" name="sexo" value="mas" required="">
+                <label>F</label>
+                <input type="radio" name="sexo" value="fem">
+                <br>
+                <br>
+                <label>Idade:</label>
+                <input type="number" name="idade" placeholder="digite aqui" required="">
+                <br>
+                <br>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="digite aqui" required="">
+                <br>
+                <br>
+                <label>CPF:</label>
+                <input type="text" name="cpf" placeholder="digite aqui">
+		    </fieldset>
+
+		    <fieldset>
+                <legend>Endereço</legend>
+                <label>Cidade: </label>
+                <input type="text" name="cidade" placeholder="Digite aqui" required="">
+                <br>
+                <br>
+                <label>Rua: </label>
+                <input type="text" name="rua" placeholder="Digite aqui" required="">
+                <br>
+                <br>
+                <label>Bairro: </label>
+                <input type="text" name="bairro" placeholder="Digite aqui" required="">
+                <br>
+                <br>
+                <label>Número: </label>
+                <input type="number" name="rua" placeholder="Digite aqui" required="">
+                <br>
+                <br>
+                <label>Complemento: </label>
+                <input type="text" name="complemento" placeholder="Digite aqui" required="">
+            </fieldset>
+
+		    <fieldset>
+                <legend>Orçamento</legend>
+                <label>Produto: </label>
+                <input type="text" name="prod" placeholder="Nome Produto" required="">
+                <br>
+                <br>
+                <label>Quantidade desejada</label>
+                <input type="number" name="quant" placeholder="Digite aqui" required="">
+                <br>
+                <br>
+                <label>Preço Anunciado</label>
+                <input type="number" name="preco" placeholder="Digite aqui" required="" step="any">
+                <br>
+			    <br>
+			    <label>Forma de Pagamento</label>
+			    <br>
+			    <br>
+			    <label>dinheiro</label>
+			    <input type="radio" name="paga" value="dinheiro" required="">
+			    <label>Cartão de Cŕedito</label>
+			    <input type="radio" name="paga" value="cartao de credito">
+			    <label>Cartão de Débito</label>
+			    <input type="radio" name="paga" value="cartao de debito">
+			    <br>
+			    <br>
+			    <label>Desconto</label>
+			    <input type="number" name="desc" max="50" min="0" required="">
+		    </fieldset>
+
+            <div style="text-align: center;">
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="Resetar" value="Resetar" style="margin-left: 100px">
+            </div>
+	    </form>
+    </body>
+</html>
